@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">№</th>
+            <th scope="col">ФИО</th>
+            <th scope="col">Number</th>
+            <th scope="col">Mail</th>
+            <th scope="col">Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for element in articles %}
+        <tr>
+            <th scope="row">{{ element.id }}</th>
+            <th>{{ element.name }}</th>
+            <th>{{ element.number }}</th>
+            <th>{{ element.mail }}</th>
+            <th>{{ element.date }}</th>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
