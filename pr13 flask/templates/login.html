@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}
+sign in
+{% endblock %}
+
+{% block body %}
+<div class="container row justify-content-md-center">
+    <form action="/login" method="post" class="border bg-white col-md-4">
+        <h3 class="pt-2 text-center">Вход</h3>
+        {{ form.csrf_token }}
+        <p>
+            {{ form.username.label(class='form-label', placeholder='Имя') }}<br>
+            {{ form.username(class='form-control') }}
+            {% if form.username.errors %}
+            {% for error in form.username.errors %}
+            {{ error }}
+            {% endfor %}
+            {% endif %}
+        </p>
+        <p>
+            {{ form.password.label(class='form-label') }}<br>
+            {{ form.password(class='form-control') }}
+            {% if form.password.errors %}
+            {% for error in form.password.errors %}
+            {{ error }}
+            {% endfor %}
+            {% endif %}
+        </p>
+        <p>
+            {{ form.remember.label(class='form-label') }}
+            {{ form.remember() }}
+        </p>
+        <p>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </p>
+    </form>
+</div>
+{% endblock %}
