@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p, a {
+    font-weight: 300;
+}
+
+h1, h2, h3, h4 ,h5 {
+    font-weight: 500;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ /* header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background: #EEEFF1;
+
+    width: 100%;
+    height: 72px;
+
+
+    box-shadow: 0px 0px 5px 0px#727272;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+
+    color: #000000;
+
+    margin: 0px 21px 0px 21px;
+}
+
+header nav a:after {
+    display: block;
+    content: "";
+    width: 0%;
+    height: 0.5px;
+    background: #000000;
+    transition: all 0.4s;
+}
+
+header nav a:hover:after {
+    width: 30px;
+}
+
+/* main */
+
+.item__one {
+    height: 600px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.item__one img {
+    padding: 140px;
+}
+
+.item__one .left h1 {
+    font-size: 48px;
+
+    color: #000000;
+
+    margin: 0px 0px 60px 0px;
+}
+
+.item__one .left p {
+    width: 540px;
+    height: 67px;
+    
+    font-size: 16px;
+    line-height: 26px;
+    
+    color: #727272;
+
+    margin: 0px 0px 60px 0px;
+}
+
+.item__one .left button {
+    width: 225px;
+    height: 65px;
+    
+    background: #34547A;
+    border: none;
+
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+
+    transition: all 0.4s;
+}
+
+.item__one .left button:hover {
+    background: #1c6dcf;
+    box-shadow: 0px 0px 10px 0px #727272;
+}
+
+/* footer*/
+
+footer {
+    height: 50px;
+    width: 100%;
+
+    color: white;
+
+    background: #34547A;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

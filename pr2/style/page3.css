@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p, a {
+    font-weight: 300;
+}
+
+h1, h2, h3, h4 ,h5 {
+    font-weight: 500;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+ /* header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background: #EEEFF1;
+
+    width: 100%;
+    height: 72px;
+
+
+    box-shadow: 0px 0px 5px 0px#727272;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+
+    color: #000000;
+
+    margin: 0px 21px 0px 21px;
+}
+
+header nav a:after {
+    display: block;
+    content: "";
+    width: 0%;
+    height: 0.5px;
+    background: #000000;
+    transition: all 0.4s;
+}
+
+header nav a:hover:after {
+    width: 30px;
+}
+
+/* main */
+
+.item__one {
+    height: 1004px;
+    width: 100%;
+
+    background: #E5E5E5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: -1;
+}
+
+.item__one h1 {
+    font-size: 32px;
+    text-align: center;
+    
+    color: #000000;
+
+    margin: 0px 0px 50px 0px;
+}
+
+.item__one p {
+    width: 540px;
+    height: 67px;
+
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    
+    color: #727272;
+
+    margin: 0px 0px 57px 0px;
+}
+
+.item__one img {
+    width: 1110px;
+    height: 600px;
+    
+}
+
+.item__two {
+    height: 800px;
+    width: 100%;
+
+    background: #EEEFF1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.item__two .photo {
+    height: 400px;
+    width: 400px;
+}
+
+.item__two .photo .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_three {
+    height: 300px;
+    width: 100%;
+    background: #E5E5E5;
+}
+
+/* footer*/
+
+footer {
+    height: 50px;
+    width: 100%;
+
+    color: white;
+
+    background: #34547A;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
