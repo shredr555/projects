@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+/* grid */
+
+.grid {
+    display: grid;
+    grid-template-rows: 88px 1px 610px 422px;
+}
+
+/* header */
+
+header {
+    background: white;
+    align-self: center;
+    justify-self: center;
+}
+
+header a {
+    font-size: 18px;
+    text-decoration: none;
+
+    color: #828282;
+
+    margin: 33px 78px 32px 78px;
+
+    transition: all 0.2s linear;
+}
+
+header a:hover {
+    color: #070707;
+}
+
+/* line */
+
+.line {
+    justify-self: center;
+    background: black;
+    width: 945px;
+    height: 1px;
+}
+
+/* main */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills h1 {
+    font-size: 34px;
+    text-align: center;
+
+    color: #070707;
+
+    margin: 0px 0px 69px 0px;
+}
+
+.skills p {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #070707;
+
+    margin: 0px 0px 84px 0px;
+}
+
+.skills .owl-carousel {
+    height: 208px;
+    width: 945px;
+}
+
+.skills .owl-carousel .item {
+    width: 170px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.skills .owl-carousel .item .one {
+    height: 88px;
+    width: auto;
+}
+
+.skills .owl-carousel .item p {
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #828282;
+}
+
+.skills .owl-carousel .item .stars {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills .owl-carousel .item .stars img {
+    width: 26.07px;
+    height: 26px;
+}
+
+/* footer */
+
+footer {
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1 {
+    font-size: 34px;
+    text-align: center;
+
+    color: #070707;
+
+    margin: 0px 0px 30px 0px;
+}
+
+footer p {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    
+    color: #070707;
+
+    margin: 0px 0px 30px 0px;
+}
+
+footer button {
+    height: 42px;
+    width: 180px;
+    background: #070707;
+    border-radius: 100px;
+
+    font-size: 18px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    margin: 0px 0px 60px 0px;
+
+    transition: all 0.3s;
+}
+
+footer button:hover {
+    background: none;
+    border: 2px solid black;
+    color: black;
+}
+
+footer .text {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #828282;
+}
