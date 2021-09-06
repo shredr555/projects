@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-size: 20px;
+    color: white;
+}
+
+body {
+    background: rgb(66, 66, 66);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game__header {
+    width: 800px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.game__header input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: auto;
+    width: 40px;
+}
+
+canvas {
+    border: 1px solid white;
+}
